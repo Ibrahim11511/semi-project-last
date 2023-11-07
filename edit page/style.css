@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700&family=Glory:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital@1&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', sans-serif;
+    /* border: 1px solid #f00; */
+}
+
+::selection {
+    color: #000;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #787878
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-edit-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-image: url('../images/edit/lamba\ \(1\).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    gap: 50px;
+    position: relative;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 2px 1px #ffffff;
+    border: 1px solid #000;
+    outline: none;
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-edit-container .image-container .image-edit {
+    width: 100%;
+    background-color: #dbdbdb;
+    /* border: none; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+.image-container .wave-3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* box-shadow: 0 0 10px 10px #000; */
+}
+
+.inputs-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 280px;
+}
+
+.name-edit {
+    height: 40px;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    /* outline: none; */
+    background-color: #161616;
+    color: #ffb300;
+}
+
+.track-edit {
+    height: 40px;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    /* outline: none; */
+    background-color: #161616;
+    color: #ffb300;
+}
+
+.intro-btn {
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 2px 1px #ffffff;
+    border: 1px solid #000000;
+    outline: none;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    background-color: #dbdbdb;
+}
+
+.intro-btn:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.about-edit-container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 100px;
+    margin: 100px 0;
+}
+
+.about-edit-text {
+    width: 800px;
+    height: 280px;
+    padding: 20px;
+    font-size: 24px;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #ffb300;
+    border-top: 1px solid #c5c5c5;
+    border-left: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5;
+    border-radius: 10px;
+    outline: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.about-btn {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border: none;
+    border-left: 2px solid #ffb300;
+    border-right: 2px solid #ffb300;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+.about-btn span {
+    color: #ffb300;
+}
+
+.skills-container-edit {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 150vh;
+    align-items: center;
+    background-image: url('../images/edit/lamba\ \(1\).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    position: relative;
+}
+
+.skills-container-edit .wave-1 {
+    transform: rotateX(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+}
+
+.skills-container-edit .all-skills {
+    align-self: self-start;
+    margin-top: 180px;
+    margin-right: 20px;
+}
+
+.skills-container-edit .all-skills .ul-of-all-skills {
+    width: 450px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.skills-container-edit .all-skills .skill-name-edit {
+    width: 100px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    list-style-type: none;
+    border-bottom: 1px solid #FFF;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-container-edit .all-skills .skill-name-edit .delete-skill-btn {
+    background-color: #161616;
+    color: rgb(251, 138, 138);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.skills-container-edit .all-skills .skill-name-edit::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #ffb300;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    position: absolute;
+    left: -30px;
+    top: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.add-skill {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-skill h2 {
+    color: #ffb300;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px;
+}
+
+.new-skill-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.new-skill-info .new-skill-name {
+    height: 40px;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    /* outline: none; */
+    background-color: #161616;
+    color: #ffb300;
+}
+
+.new-skill-info .new-skill-image {
+    width: 200px;
+    height: 200px;
+    background-color: #dbdbdb;
+    /* border: none; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.skills-btn {
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 2px 1px #ffffff;
+    border: 1px solid #000000;
+    outline: none;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    background-color: #dbdbdb;
+    width: 300px;
+}
+
+.skills-btn:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.skills-container-edit .wave-2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.projects-container {
+    /* border: 1px solid #f00; */
+    margin: 100px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-projects {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.all-projects .project-name-edit {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffb300;
+    margin: 10px 0;
+}
+
+.all-projects .project-info-edit {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 400px;
+    overflow-x: scroll;
+    color: #fca000;
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffb300;
+}
+
+.all-projects .buttons {
+    /* border: 1px solid#f00; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.all-projects .buttons button {
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    width: 80px;
+    /* border-bottom: 1px solid #000; */
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.all-projects .buttons .delete-project-btn {
+    color: #f00;
+    border-bottom: 1px solid #f00;
+}
+
+.all-projects .buttons .edit-project-btn {
+    border-bottom: 1px solid #0f0;
+    color: #0f0;
+}
+
+.new-project {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-bottom: 00px; */
+}
+
+.edit-project {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    width: 600px;
+}
+
+.edit-project-info {
+    width: 100%;
+    margin: 5px;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 25px;
+    resize: none;
+}
+
+.new-and-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 600px;
+    padding-right: 50px;
+}
+
+.edit-project h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fca000;
+    margin: 25px 0;
+}
+
+.new-project h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fca000;
+    margin: 25px 0;
+}
+
+.add-new-project-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-infe {
+    /* height: 100px; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-new-project-container .image {
+    width: 200px;
+    height: 100px;
+}
+
+.add-new-project-container .image input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fca000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.name-infe input {
+    width: 100%;
+    margin: 5px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 25px;
+}
+
+.name-infe .new-project-info {
+    width: 100%;
+    margin: 5px;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 25px;
+    resize: none;
+}
+
+.project-btn {
+    margin: 20px;
+    width: 150px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #FFF;
+    border-bottom: 1px solid #fca000;
+    color: #ffb300;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+    position: relative;
+    bottom: 60px;
+}
+
+.submit-edit-project-btn {
+    margin: 20px;
+    width: 150px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #FFF;
+    border-bottom: 1px solid #fca000;
+    color: #ffb300;
+    font-size: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+    position: relative;
+    left: 410px;
+    bottom: 60px;
+}
+
+.contact-container {
+    background-image: url('../images/edit/lamba\ \(1\).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    /* margin-top: 500px; */
+}
+
+.contact-container img {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contact-container .contact {
+    padding: 300px 0 0 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-container .contact .contact-input {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.contact-container .contact .contact-input .contact-text {
+    height: 40px;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    /* outline: none; */
+    background-color: #161616;
+    color: #ffb300;
+}
+
+.contact-container .contact .contact-input .submit-contact-btn {
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 2px 1px #ffffff;
+    border: 1px solid #000000;
+    outline: none;
+    font-size: 15px;
+    color: #000000;
+    cursor: pointer;
+    background-color: #dbdbdb;
+    width: 120px;
+}
+
+.contact-container .contact .contact-input .submit-contact-btn:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.experince-container {
+    margin: 100px 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* height: 100vh; */
+}
+
+.experince-container img {
+    position: absolute;
+    top: -300px;
+    left: -50px;
+}
+
+.new-edit-experince {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-experince-container,
+.edit-experince-container {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-experince-container,
+.edit-experince-container h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fca000;
+    margin: 25px 0;
+}
+
+.name-info,
+.name-info-edit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
+.new-experince-name,
+.edit-experince-name {
+    width: 100%;
+    margin: 5px;
+    height: 30px px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 25px;
+}
+
+.new-experice-info,
+.edit-experice-info {
+    width: 100%;
+    margin: 5px;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 25px;
+    resize: none;
+}
+
+.name-info-button,
+.name-info-button-edit {
+    width: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.experince-btn,
+.experince-btn-edit {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border: none;
+    border-left: 2px solid #ffb300;
+    border-right: 2px solid #ffb300;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.experince-btn,
+.experince-btn-edit span {
+    color: #ffb300;
+}
+
+.hide {
+    display: none;
+}
+
+.all-experince {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.all-experince .experince-name-edit {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffb300;
+    margin: 10px 0;
+}
+
+.all-experince .exprince-info-edit {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 400px;
+    overflow-x: scroll;
+    color: #fca000;
+    margin: 0 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffb300;
+}
+
+.all-experince .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.all-experince .buttons button {
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    width: 80px;
+    /* border-bottom: 1px solid #000; */
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.all-experince .buttons .delete-experince-btn {
+    color: #f00;
+    border-bottom: 1px solid #f00;
+}
+
+.all-experince .buttons .edit-experince-btn {
+    border-bottom: 1px solid #0f0;
+    color: #0f0;
+}
